@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+docker run --rm -v $PWD:/wd --workdir /wd pdflatex-brief pdflatex brief.tex
