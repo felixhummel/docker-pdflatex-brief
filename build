@@ -1,4 +1,5 @@
 #!/bin/bash
 set -euo pipefail
 
+cxfreeze 2pdf.py --target-dir dist --silent
 docker build -t pdflatex-brief .

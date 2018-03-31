@@ -3,4 +3,5 @@ set -euo pipefail
 
 uid=$UID
 gid=$(id -g)
-docker run --rm -v $PWD:/wd --workdir /wd --user $uid:$gid pdflatex-brief ./dist/2pdf brief.tex
+docker run --rm -v $PWD:/wd --workdir /wd --user $uid:$gid pdflatex-brief \
+  /opt/2pdf brief.tex
