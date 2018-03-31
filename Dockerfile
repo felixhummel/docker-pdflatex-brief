@@ -7,3 +7,5 @@ RUN apt-get --yes update \
 
 COPY 2pdf /usr/local/bin
 RUN chmod 775 /usr/local/bin/2pdf
+
+COPY dist /foo
