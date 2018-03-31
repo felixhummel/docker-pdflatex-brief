@@ -1,0 +1,61 @@
+% Ubuntu 12.04: sudo apt-get install texlive texlive-latex-extra texlive-lang-german
+\documentclass[11pt]{g-brief}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{enumerate}
+\usepackage{eurosym}
+\lochermarke
+\faltmarken
+\fenstermarken
+\trennlinien
+
+
+\Name                {Alice Wonderland}
+\Strasse             {Foostr. 1}
+\Zusatz              {}
+\RetourAdresse       {}
+\Ort                 {12345 Foostadt}
+\Land                {}
+
+\Telefon             {+49 123 45678900}
+\Telefax             {}
+\Telex               {}
+%\HTTP                {https://example.org}
+\EMail               {foo@example.org}
+
+%\Bank                {Foobank}
+%\BLZ                 {12345678}
+%\Konto               {123456789}
+
+\Unterschrift        {Alice Wonderland}
+
+\Postvermerk         {}
+\Adresse             {
+                      NAME\\
+                      \\
+                      STR\\
+                      PLZ-UND-ORT
+                      }
+
+\Betreff             {XXX}
+
+\Datum               {\today}
+%\IhrZeichen          {foo bar 123}
+%\IhrSchreiben        {01.01.1970}
+%\MeinZeichen         {foobar/321}
+
+\Anrede              {Sehr geehrter Herr FOO,}
+\Gruss               {Freundliche Grüße}{1cm}
+
+\Anlagen             {}
+\Verteiler           {}
+%\klassisch %-> altes Kopfzeilenformat, Betr.: vor Betreff und Unterschrift kursiv und in Klammern
+%\unserzeichen %-> "Unser Zeichen" statt "Mein Zeichen"
+
+\begin{document}
+\begin{g-brief}
+TEXT
+
+\end{g-brief}
+\end{document}
+\endinput

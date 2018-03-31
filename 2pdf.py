@@ -28,6 +28,8 @@ try:
     outfile = os.path.join(TMPDIR, f'{basename}.pdf')
     with open(outfile, 'rb') as f:
         pdf = f.read()
+    with open(f'{basename}.pdf', 'wb') as f:
+        f.write(pdf)
     print('OK. got log and pdf.')
 except subprocess.TimeoutExpired as e:
     print(e.stdout.decode('utf-8'))
